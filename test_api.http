@@ -1,0 +1,16 @@
+### create user test
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "하규태"
+}
+
+
+###
+GET http://localhost:8080/users/adf27dd6-cff5-44df-9e91-70659c0a769a
+Content-Type: application/json
+
+{}
+
+###
