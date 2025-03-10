@@ -14,7 +14,6 @@ public class SpringDemoApplication {
         SingletonComponent singletonComponent2 = (SingletonComponent) context.getBean("singletonComponent");
         System.out.println("SingletonComponent random int values: " + singletonComponent1.getRandomInt() + ", " + singletonComponent2.getRandomInt());
 
-
         PrototypeComponent prototypeComponent1 = (PrototypeComponent) context.getBean("prototypeComponent");
         PrototypeComponent prototypeComponent2 = (PrototypeComponent) context.getBean("prototypeComponent");
         System.out.println("PrototypeComponent random int values: " + prototypeComponent1.getRandomInt() + ", " + prototypeComponent2.getRandomInt());

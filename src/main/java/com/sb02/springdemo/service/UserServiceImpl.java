@@ -11,6 +11,7 @@ import java.util.UUID;
 @Service
 public class UserServiceImpl implements UserService {
 
+    // Composition
     private final UserRepository userRepository;
     private final ApplicationEventPublisher eventPublisher;
 
