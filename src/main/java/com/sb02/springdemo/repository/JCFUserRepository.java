@@ -1,5 +1,6 @@
-package com.sb02.springdemo;
+package com.sb02.springdemo.repository;
 
+import com.sb02.springdemo.service.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.Map;

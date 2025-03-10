@@ -1,4 +1,4 @@
-package com.sb02.springdemo;
+package com.sb02.springdemo.event;
 
 public enum UserEventType {
     REGISTERED,

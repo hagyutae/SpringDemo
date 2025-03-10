@@ -1,4 +1,4 @@
-package com.sb02.springdemo;
+package com.sb02.springdemo.controller;
 
 
 // DTO: Data Transfer Object

@@ -1,5 +1,8 @@
-package com.sb02.springdemo;
+package com.sb02.springdemo.service;
 
+import com.sb02.springdemo.event.UserEvent;
+import com.sb02.springdemo.event.UserEventType;
+import com.sb02.springdemo.repository.UserRepository;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 

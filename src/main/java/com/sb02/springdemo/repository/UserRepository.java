@@ -1,4 +1,6 @@
-package com.sb02.springdemo;
+package com.sb02.springdemo.repository;
+
+import com.sb02.springdemo.service.User;
 
 import java.util.UUID;
 
