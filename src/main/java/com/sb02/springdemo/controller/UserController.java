@@ -2,6 +2,7 @@ package com.sb02.springdemo.controller;
 
 import com.sb02.springdemo.service.User;
 import com.sb02.springdemo.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ public class UserController {
 
     // handler
     @PostMapping
-    public ResponseEntity<UUID> registerUser(@RequestBody UserCreateDto userCreateDto) {
+    public ResponseEntity<UUID> registerUser(@RequestBody @Valid UserCreateDto userCreateDto) {
         return ResponseEntity.ok(userService.registerUser(userCreateDto.name()));
     }
 

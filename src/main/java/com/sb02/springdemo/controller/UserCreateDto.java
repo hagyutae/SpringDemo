@@ -1,9 +1,11 @@
 package com.sb02.springdemo.controller;
 
 
+import jakarta.validation.constraints.NotNull;
+
 // DTO: Data Transfer Object
 public record UserCreateDto(
-        String name
+        @NotNull String name
 ) {
 }
 
