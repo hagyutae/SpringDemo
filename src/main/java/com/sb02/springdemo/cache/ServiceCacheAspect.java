@@ -3,6 +3,7 @@ package com.sb02.springdemo.cache;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
@@ -10,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Aspect
 @Component
+@Order(2)
 public class ServiceCacheAspect {
 
     private final Map<String, Object> cache = new ConcurrentHashMap<>();

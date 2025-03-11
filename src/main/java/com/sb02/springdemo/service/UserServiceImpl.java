@@ -3,6 +3,7 @@ package com.sb02.springdemo.service;
 import com.sb02.springdemo.cache.ServiceCache;
 import com.sb02.springdemo.event.UserEvent;
 import com.sb02.springdemo.event.UserEventType;
+import com.sb02.springdemo.logging.CustomLogging;
 import com.sb02.springdemo.repository.UserRepository;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
@@ -25,6 +26,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @CustomLogging
     public UUID registerUser(String userName) {
         User user = new User(UUID.randomUUID(), userName);
         userRepository.save(user);
@@ -36,6 +38,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @CustomLogging
     @ServiceCache
     public User getUser(UUID userId) {
         return userRepository.findById(userId);
