@@ -27,6 +27,7 @@ public class UserController {
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUser(@PathVariable String userId) {
         UUID id = UUID.fromString(userId);
-        return ResponseEntity.ok(userService.getUser(id));
+        User found = userService.getUser(id);
+        return ResponseEntity.ok(found);
     }
 }
